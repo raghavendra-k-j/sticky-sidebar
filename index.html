@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sticky.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #nav {
+            z-index: 1000;
+            padding: 1rem;
+            border: 1px solid #000;
+            background-color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5rem;
+            position: sticky;
+            top: 0;
+        }
+
+        #footer {
+            padding: 1rem;
+        }
+
+        #main {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #content {
+            padding: 1rem;
+            border: 1px solid blue;
+        }
+
+        #aside {
+            will-change: min-height;
+        }
+
+        .aside_inner {
+            padding: 1rem;
+            border: 1px solid red;
+            transform: translate(0, 0);
+            transform: translate3d(0, 0, 0);
+            will-change: position, transform;
+        }
+
+        @media (min-width: 992px) {
+            #content {
+                width: 70%;
+            }
+
+            #aside {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav id="nav">
+        SITE NAVIGATION BAR
+    </nav>
+
+    <main id="main">
+        <div id="content">
+            <h1>MAIN CONTENT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse
+                accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe
+                neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam!
+                Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit
+                consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at explicabo
+                voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium, laborum sit earum
+                facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem reiciendis ratione, veritatis
+                at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam, iste ut impedit id in ex adipisci eum
+                neque sapiente repellat eligendi quos omnis quod harum maxime rerum officia nulla ipsum sit aspernatur!
+                Voluptas id eos minima consequatur in eveniet repudiandae nisi blanditiis similique. Expedita nam,
+                doloremque saepe esse, est cum unde temporibus veniam, cupiditate delectus iusto? Necessitatibus, at
+                reprehenderit? Exercitationem tempore expedita sint non modi aperiam consequatur ex praesentium ducimus
+                laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque atque eveniet, voluptatum
+                pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse
+                accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe
+                neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam!
+                Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit
+                consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at explicabo
+                voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium, laborum sit earum
+                facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem reiciendis ratione, veritatis
+                at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam, iste ut impedit id in ex adipisci eum
+                neque sapiente repellat eligendi quos omnis quod harum maxime rerum officia nulla ipsum sit aspernatur!
+                Voluptas id eos minima consequatur in eveniet repudiandae nisi blanditiis similique. Expedita nam,
+                doloremque saepe esse, est cum unde temporibus veniam, cupiditate delectus iusto? Necessitatibus, at
+                reprehenderit? Exercitationem tempore expedita sint non modi aperiam consequatur ex praesentium ducimus
+                laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque atque eveniet, voluptatum
+                pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse
+                accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe
+                neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam!
+                Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit
+                consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at explicabo
+                voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium, laborum sit earum
+                facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem reiciendis ratione, veritatis
+                at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam, iste ut impedit id in ex adipisci eum
+                neque sapiente repellat eligendi quos omnis quod harum maxime rerum officia nulla ipsum sit aspernatur!
+                Voluptas id eos minima consequatur in eveniet repudiandae nisi blanditiis similique. Expedita nam,
+                doloremque saepe esse, est cum unde temporibus veniam, cupiditate delectus iusto? Necessitatibus, at
+                reprehenderit? Exercitationem tempore expedita sint non modi aperiam consequatur ex praesentium ducimus
+                laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque atque eveniet, voluptatum
+                pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse
+                accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe
+                neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam!
+                Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit
+                consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at explicabo
+                voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium, laborum sit earum
+                facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem reiciendis ratione, veritatis
+                at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam, iste ut impedit id in ex adipisci eum
+                neque sapiente repellat eligendi quos omnis quod harum maxime rerum officia nulla ipsum sit aspernatur!
+                Voluptas id eos minima consequatur in eveniet repudiandae nisi blanditiis similique. Expedita nam,
+                doloremque saepe esse, est cum unde temporibus veniam, cupiditate delectus iusto? Necessitatibus, at
+                reprehenderit? Exercitationem tempore expedita sint non modi aperiam consequatur ex praesentium ducimus
+                laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque atque eveniet, voluptatum
+                pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse
+                accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe
+                neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam!
+                Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit
+                consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at explicabo
+                voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium, laborum sit earum
+                facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem reiciendis ratione, veritatis
+                at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam, iste ut impedit id in ex adipisci eum
+                neque sapiente repellat eligendi quos omnis quod harum maxime rerum officia nulla ipsum sit aspernatur!
+                Voluptas id eos minima consequatur in eveniet repudiandae nisi blanditiis similique. Expedita nam,
+                doloremque saepe esse, est cum unde temporibus veniam, cupiditate delectus iusto? Necessitatibus, at
+                reprehenderit? Exercitationem tempore expedita sint non modi aperiam consequatur ex praesentium ducimus
+                laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque atque eveniet, voluptatum
+                pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse
+                accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe
+                neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam!
+                Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit
+                consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at explicabo
+                voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium, laborum sit earum
+                facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem reiciendis ratione, veritatis
+                at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam, iste ut impedit id in ex adipisci eum
+                neque sapiente repellat eligendi quos omnis quod harum maxime rerum officia nulla ipsum sit aspernatur!
+                Voluptas id eos minima consequatur in eveniet repudiandae nisi blanditiis similique. Expedita nam,
+                doloremque saepe esse, est cum unde temporibus veniam, cupiditate delectus iusto? Necessitatibus, at
+                reprehenderit? Exercitationem tempore expedita sint non modi aperiam consequatur ex praesentium ducimus
+                laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque atque eveniet, voluptatum
+                pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+        </div>
+        <div id="aside">
+            <div class="aside_inner">
+                <h1>SIDEBAR</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis?
+                    Reiciendis error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta
+                    esse accusantium, ab repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur
+                    ut saepe neque? Soluta quo aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam
+                    molestias ipsam! Nostrum minima quia impedit culpa consectetur fugit laboriosam qui modi quidem sint
+                    suscipit consequuntur possimus sapiente a necessitatibus iusto dolor, in vel aut. Cumque at
+                    explicabo voluptatibus nisi hic commodi temporibus, quos rem totam veniam ducimus praesentium,
+                    laborum sit earum facilis! Iure ab dolores ullam, saepe similique quibusdam corrupti autem
+                    reiciendis ratione, veritatis at fuga numquam vero. Cupiditate incidunt commodi, itaque numquam,
+                    iste ut impedit id in ex adipisci eum neque sapiente repellat eligendi quos omnis quod harum maxime
+                    rerum officia nulla ipsum sit aspernatur! Voluptas id eos minima consequatur in eveniet repudiandae
+                    nisi blanditiis similique. Expedita nam, doloremque saepe esse, est cum unde temporibus veniam,
+                    cupiditate delectus iusto? Necessitatibus, at reprehenderit? Exercitationem tempore expedita sint
+                    non modi aperiam consequatur ex praesentium ducimus laudantium enim ipsa, nesciunt laboriosam autem
+                    ut culpa aut doloremque atque eveniet, voluptatum pariatur ab dolore. Mollitia eius officiis ut
+                    perferendis?</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <h1>FOOTER</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas dolores illum fuga nobis? Reiciendis
+            error doloremque magni dolorum laboriosam vel tempore eaque! Ipsum nam suscipit, soluta esse accusantium, ab
+            repellat fugit maiores labore, tenetur laboriosam possimus mollitia aspernatur ut saepe neque? Soluta quo
+            aliquam commodi, amet nemo neque, vitae sequi odit doloremque veniam molestias ipsam! Nostrum minima quia
+            impedit culpa consectetur fugit laboriosam qui modi quidem sint suscipit consequuntur possimus sapiente a
+            necessitatibus iusto dolor, in vel aut. Cumque at explicabo voluptatibus nisi hic commodi temporibus, quos
+            rem totam veniam ducimus praesentium, laborum sit earum facilis! Iure ab dolores ullam, saepe similique
+            quibusdam corrupti autem reiciendis ratione, veritatis at fuga numquam vero. Cupiditate incidunt commodi,
+            itaque numquam, iste ut impedit id in ex adipisci eum neque sapiente repellat eligendi quos omnis quod harum
+            maxime rerum officia nulla ipsum sit aspernatur! Voluptas id eos minima consequatur in eveniet repudiandae
+            nisi blanditiis similique. Expedita nam, doloremque saepe esse, est cum unde temporibus veniam, cupiditate
+            delectus iusto? Necessitatibus, at reprehenderit? Exercitationem tempore expedita sint non modi aperiam
+            consequatur ex praesentium ducimus laudantium enim ipsa, nesciunt laboriosam autem ut culpa aut doloremque
+            atque eveniet, voluptatum pariatur ab dolore. Mollitia eius officiis ut perferendis?</p>
+    </footer>
+
+    <script type="text/javascript">
+        var sidebar = new StickySidebar('#aside', {
+            containerSelector: '#main',
+            innerWrapperSelector: '.aside_inner',
+            minWidth: 992
+        });
+    </script>
+
+</body>
+
+</html>
